@@ -1,0 +1,79 @@
+:root {
+    --glass: rgba(255, 255, 255, 0.15);
+    --border: rgba(255, 255, 255, 0.2);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 1s ease-in-out; /* Smooth background transition */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dynamic Background Classes */
+.bg-clear  { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1506466010722-395aa2bef877?auto=format&fit=crop&w=1920&q=80'); }
+.bg-clouds { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=1920&q=80'); }
+.bg-rain   { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&fit=crop&w=1920&q=80'); }
+.bg-snow   { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1491002052546-bf38f186af56?auto=format&fit=crop&w=1920&q=80'); }
+.bg-default { background: #0f172a; }
+
+.glass-container {
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    width: 400px;
+    padding: 40px;
+    border-radius: 40px;
+    border: 1px solid var(--border);
+    color: white;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 10px;
+    width: 100%;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#main-icon { font-size: 5rem; margin-bottom: 10px; color: #ffce67; }
+
+h1 { font-size: 5.5rem; font-weight: 800; margin-bottom: 0; }
+h2 { font-size: 1.8rem; font-weight: 400; opacity: 0.9; }
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    background: rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.stat-card i { display: block; font-size: 1.5rem; margin-bottom: 5px; color: #38bdf8; }
+.stat-card span { font-weight: bold; }
+.stat-card small { display: block; opacity: 0.6; font-size: 0.7rem; }

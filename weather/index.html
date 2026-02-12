@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced SkyGlass Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body id="body-bg">
+    <div class="glass-container">
+        <div class="search-section">
+            <i class="ph ph-map-pin"></i>
+            <input type="text" id="cityInput" placeholder="Search City..." autocomplete="off">
+            <button id="searchBtn"><i class="ph ph-magnifying-glass"></i></button>
+        </div>
+
+        <div class="main-weather">
+            <div id="weather-icon-container">
+                <i id="main-icon" class="ph-fill ph-sun"></i>
+            </div>
+            <h1 id="temp">--°</h1>
+            <h2 id="cityName">Enter Location</h2>
+            <p id="description">Waiting for input...</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="ph ph-drop"></i>
+                <span id="humidity">--%</span>
+                <small>Humidity</small>
+            </div>
+            <div class="stat-card">
+                <i class="ph ph-wind"></i>
+                <span id="wind">-- km/h</span>
+                <small>Wind</small>
+            </div>
+            <div class="stat-card">
+                <i class="ph ph-thermometer"></i>
+                <span id="feels-like">--°</span>
+                <small>Feels Like</small>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
