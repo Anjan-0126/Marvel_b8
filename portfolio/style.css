@@ -1,0 +1,29 @@
+/* Glassmorphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient Text Effect */
+.text-gradient {
+    background: linear-gradient(to right, #60a5fa, #f87171);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Custom Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hover Scaling for Icons and Cards */
+.group:hover img {
+    transform: scale(1.05);
+}
+
+/* Smooth Transitions for Interactive Elements */
+a, button, .glass {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

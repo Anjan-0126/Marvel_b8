@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjan M | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-950 text-white font-sans selection:bg-red-500 selection:text-white scroll-smooth">
+
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-blue-600/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-0 right-0 w-[40%] h-[40%] bg-red-600/10 rounded-full blur-[120px]"></div>
+    </div>
+
+    <nav class="sticky top-4 z-50 px-4 md:px-10">
+        <div class="max-w-6xl mx-auto glass rounded-2xl px-6 py-4 flex justify-between items-center shadow-2xl">
+            <span class="text-xl font-black tracking-tighter text-gradient">ANJAN.M</span>
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+                <a href="#projects" class="hover:text-blue-400 transition">Portfolio</a>
+                <a href="#contact" class="hover:text-red-400 transition">Contact</a>
+                <a href="https://github.com/Anjan-0126" target="_blank" class="text-blue-400">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-24 pb-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="relative inline-block mb-10 group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-red-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+                <div class="relative w-48 h-48 rounded-full overflow-hidden border-2 border-white/10 shadow-2xl">
+                    <img src="profile.jpg" alt="Anjan M" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500">
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight">
+                Engineering <span class="text-gradient underline decoration-white/10">The Future</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-light italic">
+                B.Tech Student & Tech Enthusiast. Mastering Java, Linux architecture, and modern Frontend frameworks.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="glass p-6 rounded-3xl text-center hover:scale-105 transition-all">
+                <i class="fas fa-code text-blue-400 mb-2"></i>
+                <p class="text-xs font-bold tracking-widest uppercase">Frontend</p>
+            </div>
+            <div class="glass p-6 rounded-3xl text-center hover:scale-105 transition-all">
+                <i class="fab fa-linux text-white mb-2"></i>
+                <p class="text-xs font-bold tracking-widest uppercase">Linux</p>
+            </div>
+            <div class="glass p-6 rounded-3xl text-center hover:scale-105 transition-all">
+                <i class="fab fa-git-alt text-red-500 mb-2"></i>
+                <p class="text-xs font-bold tracking-widest uppercase">Git Ops</p>
+            </div>
+            <div class="glass p-6 rounded-3xl text-center hover:scale-105 transition-all">
+                <i class="fab fa-java text-orange-400 mb-2"></i>
+                <p class="text-xs font-bold tracking-widest uppercase">Java</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-black mb-12 tracking-widest uppercase opacity-50">Selected Works</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="group glass rounded-[2.5rem] p-10 hover:bg-white/[0.05] transition-all">
+                    <span class="text-blue-400 font-mono text-sm tracking-tighter">01. JAVA PROJECT</span>
+                    <h3 class="text-3xl font-bold mt-4 mb-4">Finance Tracker for Colleges</h3>
+                    <p class="text-gray-400 leading-relaxed mb-8 text-sm">A robust application built to manage academic budgets, track expenses, and optimize student finances.</p>
+                    <a href="https://github.com/Anjan-0126" target="_blank" class="px-6 py-3 rounded-full border border-white/20 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-black transition">Source Code</a>
+                </div>
+                <div class="group glass rounded-[2.5rem] p-10 hover:bg-white/[0.05] transition-all">
+                    <span class="text-red-400 font-mono text-sm tracking-tighter">02. WEB UI</span>
+                    <h3 class="text-3xl font-bold mt-4 mb-4">Personal Portfolio</h3>
+                    <p class="text-gray-400 leading-relaxed mb-8 text-sm">A responsive, high-performance portfolio showcasing B.Tech milestones and tech skills.</p>
+                    <a href="https://github.com/Anjan-0126" target="_blank" class="px-6 py-3 rounded-full border border-white/20 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-black transition">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto glass rounded-[3rem] p-10 md:p-20 text-center relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-red-500"></div>
+            <h2 class="text-4xl md:text-5xl font-black mb-6">Let's Work Together</h2>
+            <p class="text-gray-400 mb-12">I'm currently looking for internships and collaborative tech projects.</p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="mailto:anjananju0126@gmail.com" class="p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition group">
+                    <i class="fas fa-envelope text-blue-400 mb-3 text-2xl group-hover:scale-110 transition"></i>
+                    <p class="block text-sm font-bold opacity-70">Email Me</p>
+                    <p class="text-sm mt-1">anjananju0126@gmail.com</p>
+                </a>
+                <a href="tel:+9187932554126" class="p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition group">
+                    <i class="fas fa-phone text-red-400 mb-3 text-2xl group-hover:scale-110 transition"></i>
+                    <p class="block text-sm font-bold opacity-70">Call Me</p>
+                    <p class="text-sm mt-1">+91 87932 54126</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 text-center">
+        <div class="flex justify-center space-x-8 mb-8">
+            <a href="https://github.com/Anjan-0126" target="_blank" class="text-2xl text-gray-500 hover:text-white transition"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anjan-m-416656330" class="text-2xl text-gray-500 hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="text-gray-600 text-[10px] tracking-[0.5em] font-bold uppercase">Anjan M &bull; B.Tech &bull; 2026</p>
+    </footer>
+
+</body>
+</html>
